@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - Acquisition Pulse</title>
+    <meta name="description" content="Learn how to set up Acquisition Pulse with your Shopify store and Google Ads account in minutes.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-section {
+            background: white;
+            padding: 3rem 2rem;
+        }
+        
+        .guide-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .guide-header h1 {
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+        
+        .guide-step {
+            background: var(--gray-50);
+            border-left: 4px solid var(--orange);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .guide-step h2 {
+            color: var(--navy);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .guide-step p, .guide-step li {
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+        
+        .guide-step ol {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .guide-step ol li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .code-block {
+            background: var(--gray-900);
+            color: #10B981;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            margin: 1rem 0;
+        }
+        
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .column-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-200);
+        }
+        
+        .column-item h3 {
+            color: var(--navy);
+            margin-bottom: 0.75rem;
+        }
+        
+        @media (max-width: 768px) {
+            .columns {
+                grid-template-columns: 1fr;
+            }
+            
+            .guide-header h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo-light.png" alt="Acquisition Pulse"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#how-it-works">How It Works</a></li>
+                    <li><a href="index.html#benefits">Benefits</a></li>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="guide-section">
+        <div class="guide-container">
+            <div class="guide-header">
+                <h1>Getting Started with Acquisition Pulse</h1>
+                <p>Set up your profitability dashboard in minutes</p>
+            </div>
+
+            <div class="guide-step">
+                <h2>Step 1: Export Your Shopify Data</h2>
+                <p>First, you'll need to export your order history from Shopify as a CSV file.</p>
+                <ol>
+                    <li>Log in to your Shopify admin dashboard</li>
+                    <li>Go to <strong>Orders</strong></li>
+                    <li>Click <strong>Export</strong> in the top-right</li>
+                    <li>Select <strong>CSV for Excel</strong></li>
+                    <li>Open the CSV in a spreadsheet editor and ensure these columns are present:
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li><code>order_date</code> - Date the order was placed</li>
+                            <li><code>revenue</code> - Total order value</li>
+                            <li><code>cogs</code> - Cost of goods sold (sum of product costs)</li>
+                            <li><code>platform</code> - Sales channel (e.g., "Shopify", "Facebook")</li>
+                            <li><code>customer_id</code> - Unique customer identifier</li>
+                        </ul>
+                    </li>
+                    <li>Save the file and keep it handy</li>
+                </ol>
+            </div>
+
+            <div class="guide-step">
+                <h2>Step 2: Connect Your Google Ads Account</h2>
+                <p>Next, authorize Acquisition Pulse to pull campaign spend data from Google Ads.</p>
+                <ol>
+                    <li>Open the Acquisition Pulse dashboard</li>
+                    <li>Click <strong>Connect Google Ads</strong></li>
+                    <li>You'll be redirected to Google's sign-in page</li>
+                    <li>Sign in with your Google Ads account</li>
+                    <li>Grant Acquisition Pulse permission to access your campaign data</li>
+                    <li>You'll be redirected back to the dashboard—you're all set!</li>
+                </ol>
+                <p style="margin-top: 1rem; font-size: 0.95rem;"><strong>Note:</strong> Your data remains local on your device. We never store your Google credentials or campaign data on our servers.</p>
+            </div>
+
+            <div class="guide-step">
+                <h2>Step 3: Upload Your CSV & Start Analyzing</h2>
+                <p>Now it's time to upload your Shopify data and see your profitability metrics.</p>
+                <ol>
+                    <li>In the dashboard, click <strong>Upload Orders</strong></li>
+                    <li>Select your CSV file</li>
+                    <li>Click <strong>Upload & Analyze</strong></li>
+                    <li>The dashboard will process your data and display:</li>
+                </ol>
+                <div class="columns">
+                    <div class="column-item">
+                        <h3>📊 Key Metrics</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li>Total Revenue</li>
+                            <li>Total COGS</li>
+                            <li>Gross Profit</li>
+                            <li>Overall Margin %</li>
+                        </ul>
+                    </div>
+                    <div class="column-item">
+                        <h3>🎯 By Channel</h3>
+                        <ul style="margin-left: 1rem;">
+                            <li>Revenue per channel</li>
+                            <li>COGS per channel</li>
+                            <li>Profit per channel</li>
+                            <li>LTV:CAC ratio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-step">
+                <h2>Troubleshooting</h2>
+                <p><strong>Q: My CSV upload fails. What columns am I missing?</strong></p>
+                <p>A: Make sure your CSV has exactly these columns: <code>order_date</code>, <code>revenue</code>, <code>cogs</code>, <code>platform</code>, <code>customer_id</code>. Column names are case-sensitive.</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>Q: Can I use Meta Ads or TikTok Ads?</strong></p>
+                <p>A: Not yet, but they're coming soon! For now, Acquisition Pulse integrates with Google Ads.</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>Q: Is my data private?</strong></p>
+                <p>A: Yes. Your CSV and Google Ads data are processed locally in your browser. We don't store, sell, or share your data with anyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="index.html#how-it-works">How It Works</a></li>
+                    <li><a href="index.html#benefits">Benefits</a></li>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Acquisition Pulse. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
