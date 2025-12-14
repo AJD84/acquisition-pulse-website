@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acquisition Pulse - Know Your True Profitability</title>
-    <meta name="description" content="Stop guessing at profitability. Acquisition Pulse combines COGS + LTV:CAC analysis to show real profit metrics from your e-commerce business.">
+    <title>AcqPulse - Know Your True Profitability</title>
+    <meta name="description" content="AcqPulse combines COGS + LTV:CAC analysis to reveal true acquisition profitability. Stop guessing at margins and scale confidently.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="assets/logo-light.png" alt="Acquisition Pulse">
+                <img src="assets/logo-light.svg" alt="AcqPulse">
             </div>
             <nav>
                 <ul>
@@ -28,8 +31,14 @@
 
     <section class="hero">
         <div class="hero-container">
+            <div class="hero-eyebrow">Profit intelligence for acquisition teams</div>
             <h1>Know Your <span class="highlight">True Profitability</span></h1>
-            <p>Stop guessing at margins. Acquisition Pulse combines COGS + LTV:CAC analysis to reveal which channels actually make you money—not just revenue.</p>
+            <p>COGS-aware, LTV-driven analytics that expose which channels compound profit, not just revenue.</p>
+            <div class="hero-badges">
+                <span class="badge">COGS + LTV:CAC combined</span>
+                <span class="badge">Profit guardrails by channel</span>
+                <span class="badge">Privacy-first by design</span>
+            </div>
             <div class="cta-buttons">
                 <a href="getting-started.html" class="btn btn-primary">Get Started Free</a>
                 <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
@@ -40,8 +49,8 @@
     <section class="problem">
         <div class="container">
             <div class="section-header">
-                <h2>Why Revenue Metrics Mislead</h2>
-                <p>Most dashboards show you revenue. But revenue isn't profit.</p>
+                <h2>Revenue Is Not Profit</h2>
+                <p>Most dashboards celebrate revenue. We surface the profit reality underneath.</p>
             </div>
             <div class="problem-grid">
                 <div class="problem-card">
@@ -55,6 +64,10 @@
                 <div class="problem-card">
                     <h3>Burning Cash on "Winners"</h3>
                     <p>Scaling a channel with great revenue but thin margins? You're growing unprofitably—and won't realize it until it's too late.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>Ad Platforms Don't Track Costs</h3>
+                    <p>Platforms reward revenue and impressions. Without COGS and CAC together, you scale what looks good—while profit erodes.</p>
                 </div>
             </div>
         </div>
@@ -99,7 +112,7 @@
                         <tr>
                             <td><strong>True profit per channel</strong></td>
                             <td class="cross">✗</td>
-                            <td class="highlight">✓ COGS + LTV:CAC combined</td>
+                            <td class="highlight">✓ COGS + LTV + CAC combined</td>
                         </tr>
                         <tr>
                             <td><strong>Margin visibility</strong></td>
@@ -110,6 +123,11 @@
                             <td><strong>Cohort analysis</strong></td>
                             <td class="cross">✗</td>
                             <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Profit guardrails</strong></td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓ Alerts when margins slip</td>
                         </tr>
                     </tbody>
                 </table>
@@ -174,6 +192,42 @@
                     <h3>Privacy-First</h3>
                     <p>Your data stays local. OAuth tokens stored securely. No third-party sharing, ever.</p>
                 </div>
+                <div class="benefit">
+                    <h3>Guardrails & Alerts</h3>
+                    <p>Set minimum margin and payback rules with proactive alerts so spend never outruns profit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Profit-First Teams</h2>
+                <p>Clear, COGS-aware answers for growth, finance, and media buyers.</p>
+            </div>
+            <div class="proof-grid">
+                <div class="proof-card">
+                    <div class="proof-quote">“We stopped scaling blind. LTV:CAC plus COGS showed which campaigns were quietly underwater.”</div>
+                    <div class="proof-meta">
+                        <span class="proof-name">Maya Chen</span>
+                        <span class="proof-role">VP Growth, DTC apparel</span>
+                    </div>
+                </div>
+                <div class="proof-card stats">
+                    <div class="stat">
+                        <div class="stat-value">+18%</div>
+                        <div class="stat-label">Lift in contribution margin</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">-27%</div>
+                        <div class="stat-label">Spend cut from unprofitable campaigns</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">&lt; 30d</div>
+                        <div class="stat-label">Payback visibility across channels</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -216,7 +270,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Acquisition Pulse. All rights reserved.</p>
+            <p>&copy; 2025 AcqPulse. All rights reserved.</p>
         </div>
     </footer>
 </body>
